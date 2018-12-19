@@ -4,7 +4,7 @@
 
 
 body {
-    border-top: 5px solid #76c38f;
+    border-top: 2px solid #76c38f;
     background-color: #600;
     background-attachment: fixed;
     padding-top: 3em;
@@ -19,12 +19,26 @@ body {
 
 .header {
     padding-bottom: 50px;
+    width: 100%;
 }
 
 .container {
+    flex-wrap: wrap;
     max-width: 1000px;
     padding: 0 10px;
     margin: 0 auto;
+
+    &::before {
+        content: " ";
+        position: absolute;
+        top: 2px;
+        left: 0;
+        right: 0;
+        height: 610px;
+        background-color: #000;
+        opacity: 0.6;
+        z-index: -1;
+    }
 }
 
 .logo {
@@ -34,59 +48,75 @@ body {
         font-size: 2em;
     }
 }
+.wrap {
+    display: inline-block;
+    height: 2.5rem;
+    padding: 0 20px;
+    border-radius: 10px;
+}
+
+._highlight {
+    background-color: #76c38f;
+}
+ 
+
+.link {
+    line-height: 3em;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #fff;
+}
 
 .navigation {
-    &__wrap-item {
-        display: inline-block;
-        height: 2.5rem;
-        padding: 0 20px;
-        &:hover {
-            border-radius: 10px;
-            background-color: #76c38f;
-        }
-    }
-
     &__item {
-        line-height: 3em;
         text-transform: uppercase;
-        font-size: 0.8rem;
-        text-decoration: none;
-        color: #fff;
     }
 }
 
 .slider {
     color: #fff;
-    [class^="arrow"] {
-        border: solid #76c38f;
-        border-width: 0 5px 5px 0;
-        display: inline-block;
-        padding: 10px;
-        border-radius: 5px;
-        &:hover {
-            cursor: pointer;
-            border-color:#61a378;
-        }
-    }
-    .arrow_right {
-        transform: rotate(-45deg);
-    }
-
-    .arrow_left {
-        transform: rotate(135deg);
-    }
+    padding-bottom: 50px;
 }
 
+ [class^="arrow"] {
+     border: solid #76c38f;
+     border-width: 0 5px 5px 0;
+     display: inline-block;
+     padding: 10px;
+     border-radius: 5px;
+     &:hover {
+         cursor: pointer;
+         border-color:#61a378;
+     }
+ }
+ 
+ .arrow._right {
+     transform: rotate(-45deg);
+ }
+
+ .arrow._left {
+     transform: rotate(135deg);
+ }
+
 .text {
+    font-size: 0.9rem;
+    color: #979797;
+    font-weight: 100;
+}
+
+.description {
     max-width: 30%;
     &__header {
         font-size: 3rem;
         font-weight: 100;
+        margin-bottom: 20px;
     }
     &__content {
-        color: #6b6b6b;
+        padding: 10px 10px;
     }
 }
+
 
 .slider-image {
     flex-grow: 2;
@@ -97,3 +127,107 @@ body {
     border-radius: 50%;
 }
 
+.service {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: stretch;
+    text-align: center;
+
+    &__item {
+        flex-direction: column;
+        max-width: 20%;
+        background-color: #fff;
+        padding: 20px 20px;
+        &:hover {
+            background-color: #76c38f;
+            cursor: pointer;
+        }
+        &:hover>*{
+            color: #fff;
+        }
+    }
+
+    &__img {
+        height: 120px;
+        width: 120px;
+        background-color: #333;
+    }
+
+    &__title {
+        font-size: 2rem;
+        color: #333;
+        padding: 10px 0;
+        text-transform: uppercase;
+
+    }
+}
+
+
+.latest-work {
+    padding: 50px 0;
+    position: relative;
+    //text-align: center;
+
+    &__title {
+        position: absolute;
+        top: -25px;
+        // margin: 0 auto;
+        // right: 0;
+        // left: 0;
+        display: inline-block;
+        padding: 5px;
+        color: #fff;
+        font-size: 2rem;
+        text-transform: uppercase;
+        background-color: #303030;
+        border-radius: 10px;
+        
+        &:before {
+            content: ' ';
+            height: 0;
+            border: 2px solid #303030;
+        }
+    }
+
+    &__examples {
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+
+    &__item {
+        position: relative;
+        width: 30%;
+        max-height: 190px;
+        text-align: center;
+        border: 5px solid #fff;
+        margin-bottom: 40px;
+        overflow: hidden;
+
+        &:hover {
+            cursor: pointer;
+            border-color: #76c38f;
+        }
+    }
+
+    &__img {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        background-color: #353535;
+
+        &:hover {
+            z-index: 1;
+        }
+    }
+
+    &__item-title {
+        text-transform: uppercase;
+        line-height: 2rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        color: #fff;
+        background-color: #151515;
+    }
+}
