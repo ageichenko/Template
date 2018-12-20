@@ -1,102 +1,197 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Template</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="header flex">
+    <div class="wrap-header">
+        <div class="header container">
             <div class="logo"><a class="logo__link" href="#">The Modernist</a></div>
-            <nav class="navigation">
-                <div class="wrap _highlight"><a class="navigation__item link" href="#">home</a></div>  
-                <div class="wrap"><a class="navigation__item link" href="#">style demo</a></div>  
-                <div class="wrap"><a class="navigation__item link" href="#">full width</a></div>  
-                <div class="wrap"><a class="navigation__item link" href="#">dropdown</a></div>  
-                <div class="wrap"><a class="navigation__item link" href="#">portfolio</a></div>  
-                <div class="wrap"><a class="navigation__item link" href="#">gallery</a></div>  
-            </nav>
+            <label class="hidden-menu">
+                <img class="hidden-menu__icon" src="img/hidden-menu.svg" alt="">
+                <input class="hidden-menu__check-box" type="checkbox">
+
+                <nav class="navigation">
+                    <div class="wrap-btn _highlight"><a class="navigation__item link" href="#">home</a></div>
+                    <div class="wrap-btn"><a class="navigation__item link" href="#">style demo</a></div>
+                    <div class="wrap-btn"><a class="navigation__item link" href="#">full width</a></div>
+                    <div class="wrap-btn"><a class="navigation__item link" href="#">dropdown</a></div>
+                    <div class="wrap-btn"><a class="navigation__item link" href="#">portfolio</a></div>
+                    <div class="wrap-btn"><a class="navigation__item link" href="#">gallery</a></div>
+                </nav>
+            </label>
         </div>
-        <div class="slider flex">
+        <div class="slider container">
             <i class="arrow _left"></i>
-            <div class="description">
-                <h2 class="description__header">Lorem ipsum dolor sit.</h2>
-                <div class="description__content text"><span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est sequi molestias quaerat deleniti porro. Nesciunt cum tempore nisi nobis at!</span></div>
-                <div class="wrap _highlight"><a href="#" class="link btn-more-inf">read more here ></a></div>
+            <div class="slider__content">
+                <div class="description">
+                    <h2 class="description__header">Lorem ipsum dolor sit.</h2>
+                    <div class="description__content"><span> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Est
+                            sequi molestias quaerat deleniti porro. Nesciunt cum tempore nisi nobis at!</span></div>
+                    <div class="wrap-btn _highlight"><a href="#" class="link btn-more-inf">read more here &#187</a></div>
+                </div>
+                <picture class="slider-image">
+                    <source srcset="img/slide_image.jpg" media="(min-width: 768px)">
+                    <img src="" alt="">
+                </picture>
             </div>
-            <img src="" alt="" class="slider-image">
             <i class="arrow _right"></i>
         </div>
-        <div class="service flex">
-            <div class="service__item flex">
-                <img src="" alt="" class="service__img">
-                <div class="service__title"><span>Lorem, ipsum</span></div>
-                <div class="service__description text"><span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, totam doloremque perspiciatis ea minima sapiente ullam!</span></div>
-            </div>
-            <div class="service__item flex">
-                <img src="" alt="" class="service__img">
-                <div class="service__title"><span>Eius, expedita</span></div>
-                <div class="service__description text">Obcaecati odio aperiam, ad adipisci dolor doloremque, ipsum officiis architecto ea quasi cupiditate placeat, quis iusto.</div>
-            </div>
-            <div class="service__item flex">
-                <img src="" alt="" class="service__img">
-                <div class="service__title"><span>Ipsa, assumenda</span></div>
-                <div class="service__description text">Quo quaerat sit nam aliquam delectus culpa dolore modi animi laborum ratione a quos, nulla ab?</div>
-            </div>
-            <div class="service__item flex">
-                <img src="" alt="" class="service__img">
-                <div class="service__title"><span>Tempora, aliquid</span></div>
-                <div class="service__description text">Architecto labore a inventore, quaerat adipisci hic explicabo earum. Accusamus ipsa cum quia illum, inventore eveniet?</div>
-            </div>
-        </div>
-        <div class="latest-work">
-            <div class="latest-work__title"><span>latest work</span></div>
-            <div class="latest-work__examples flex">
-                <div class="latest-work__item">
-                    <img src="img/image1.jpg" alt="" class="latest-work__img">
-                    <div class="latest-work__item-title">Lorem, ipsum</div>
-                </div>
-                <div class="latest-work__item">
-                    <img src="img/image2.jpg" alt="" class="latest-work__img">
-                    <div class="latest-work__item-title">Voluptas, quidem</div>
-                </div>
-                <div class="latest-work__item">
-                    <img src="img/image3.jpg" alt="" class="latest-work__img">
-                    <div class="latest-work__item-title">Atque, nemo</div>
-                </div>
-                <div class="latest-work__item">
-                    <img src="img/image4.jpg" alt="" class="latest-work__img">
-                    <div class="latest-work__item-title">Incidunt, exercitationem</div>
-                </div>
-                <div class="latest-work__item">
-                    <img src="img/image5.jpg" alt="" class="latest-work__img">
-                    <div class="latest-work__item-title">Commodi, mollitia</div>
-                </div>
-                <div class="latest-work__item">
-                    <img src="img/image6.jpg" alt="" class="latest-work__img">
-                    <div class="latest-work__item-title">Maiores, architecto</div>
-                </div>
-                <div class="latest-work__item">
-                    <img src="img/image7.jpg" alt="" class="latest-work__img">
-                    <div class="latest-work__item-title">Tempore, quos</div>
-                </div>
-                <div class="latest-work__item">
-                    <img src="img/image8.jpg" alt="" class="latest-work__img">
-                    <div class="latest-work__item-title">Assumenda, animi</div>
-                </div>
-                <div class="latest-work__item">
-                    <img src="img/image9.jpg" alt="" class="latest-work__img">
-                    <div class="latest-work__item-title">Sit, commodi</div>
-                </div>
-            </div>
-        </div>
-        <div class="footer"></div>
-        <div class="copyright"></div>
     </div>
-<script defer src="js/scripts.js"></script>
+    <div class="service container">
+        <div class="service__item">
+            <img src="img/png1.png" alt="" class="service__img">
+            <div class="service__content">
+                <div class="service__title"><span>Lorem, ipsum</span></div>
+                <div class="service__description"><span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+                        totam doloremque perspiciatis ea minima sapiente ullam!</span></div>
+            </div>
+        </div>
+        <div class="service__item">
+            <img src="img/png1.png" alt="" class="service__img">
+            <div class="service__content">
+                <div class="service__title"><span>Eius, expedita</span></div>
+                <div class="service__description">Obcaecati odio aperiam, ad adipisci dolor doloremque, ipsum officiis
+                    architecto ea quasi cupiditate placeat, quis iusto.</div>
+            </div>
+        </div>
+        <div class="service__item">
+            <img src="img/png1.png" alt="" class="service__img">
+            <div class="service__content">
+                <div class="service__title"><span>Ipsa, assumenda</span></div>
+                <div class="service__description">Quo quaerat sit nam aliquam delectus culpa dolore modi animi laborum
+                    ratione a quos, nulla ab?</div>
+            </div>
+        </div>
+        <div class="service__item">
+            <img src="img/png1.png" alt="" class="service__img">
+            <div class="service__content">
+                <div class="service__title"><span>Tempora, aliquid</span></div>
+                <div class="service__description">Architecto labore a inventore, quaerat adipisci hic explicabo earum.
+                    Accusamus ipsa cum quia illum, inventore eveniet?</div>
+            </div>
+        </div>
+    </div>
+    <div class="latest-work container">
+        <div class="latest-work__title"><span>latest work</span></div>
+        <div class="latest-work__examples">
+            <div class="latest-work__item">
+                <img src="img/image1.jpg" alt="" class="latest-work__img">
+                <div class="latest-work__item-title">Lorem, ipsum</div>
+            </div>
+            <div class="latest-work__item">
+                <img src="img/image2.jpg" alt="" class="latest-work__img">
+                <div class="latest-work__item-title">Voluptas, quidem</div>
+            </div>
+            <div class="latest-work__item">
+                <img src="img/image3.jpg" alt="" class="latest-work__img">
+                <div class="latest-work__item-title">Atque, nemo</div>
+            </div>
+            <div class="latest-work__item">
+                <img src="img/image4.jpg" alt="" class="latest-work__img">
+                <div class="latest-work__item-title">Incidunt, exercitationem</div>
+            </div>
+            <div class="latest-work__item">
+                <img src="img/image5.jpg" alt="" class="latest-work__img">
+                <div class="latest-work__item-title">Commodi, mollitia</div>
+            </div>
+            <div class="latest-work__item">
+                <img src="img/image6.jpg" alt="" class="latest-work__img">
+                <div class="latest-work__item-title">Maiores, architecto</div>
+            </div>
+            <div class="latest-work__item">
+                <img src="img/image7.jpg" alt="" class="latest-work__img">
+                <div class="latest-work__item-title">Tempore, quos</div>
+            </div>
+            <div class="latest-work__item">
+                <img src="img/image8.jpg" alt="" class="latest-work__img">
+                <div class="latest-work__item-title">Assumenda, animi</div>
+            </div>
+            <div class="latest-work__item">
+                <img src="img/image9.jpg" alt="" class="latest-work__img">
+                <div class="latest-work__item-title">Sit, commodi</div>
+            </div>
+        </div>
+    </div>
+    <div class="wrap-footer">
+        <div class="footer container">
+            <div class="footer__item">
+                <span class="footer__item-title">from the blog</span>
+                <div class="footer__item-content">
+                    <article class="article">
+                        <header class="article__title">post title</header>
+                        <p class="article__author">
+                            <small>
+                                <span class="article__author-name">Admin</span><a class="article__author-link" href="#"
+                                    rel="author">,domainname.com</a>
+                            </small>
+                        </p>
+                        <p class="article__publish-date">
+                            <small>
+                                <time pubdate datetime="2000-05-06">friday, 6th April 2000</time>
+                            </small>
+                        </p>
+                        <p class="article__content">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi distinctio, labore
+                            sapiente
+                            sed porro, natus debitis numquam blanditiis aut veritatis dicta modi pariatur cupiditate
+                            illo
+                            eius, nostrum fugit ducimus non!
+                        </p>
+                        <a href="#" class="article__link">read more&#187</a>
+                    </article>
+                </div>
+            </div>
+            <div class="footer__item">
+                <span class="footer__item-title">quick links</span>
+                <div class="footer__item-content">
+                    <ul class="link-list">
+                        <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                        <li><a href="#">Dolores consequuntur mollitia fugit?</a></li>
+                        <li><a href="#">Sed, cum provident! Nobis.</a></li>
+                        <li><a href="#">Sit consequuntur error dolores!</a></li>
+                        <li><a href="#">Deserunt molestias quisquam quaerat.</a></li>
+                        <li><a href="#">Eum eius modi animi?</a></li>
+                        <li><a href="#">Maiores tenetur hic eveniet.</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__item">
+                <span class="footer__item-title">latest tweets</span>
+                <div class="footer__item-content">
+                    <p class="tweet"><a href=# class="tweet__link">namehere</a>Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Ipsam ex laborum odit incidunt nam. Debitis beatae hic consequatur qui vitae.</p>
+                    <p class="tweet"><a href=# class="tweet__link">namehere</a>Optio nisi blanditiis cum iure doloribus
+                        labore maxime ipsa numquam ut dolores alias, minima perspiciatis. Rem suscipit veniam sint
+                        quasi.</p>
+                </div>
+            </div>
+            <div class="footer__item">
+                <span class="footer__item-title">contact us</span>
+                <div class="footer__item-content">
+                    <form action="" class="contact">
+                        <input class="contact__input-text" type="text" name="full-name" value="full name">
+                        <input class="contact__input-text" type="text" name="email" value="email address">
+                        <input class="contact__input-text" type="text" name="subject" value="subject">
+                        <textarea class="contact__input-text contact__input-text-area" type="text" name="message"
+                            placeholder="message"></textarea>
+                        <button class="contact__button-submit wrap-btn _highlight" type="submit">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container"><span>copyright &copy; 2013 domain name - all rights reserved</span></div>
+    </div>
+    <script defer src="js/scripts.js"></script>
 </body>
+
 </html>
